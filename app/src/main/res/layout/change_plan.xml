@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/aliceblue">
+    <include
+        layout="@layout/thetop"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <LinearLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="61dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="主题"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="-124dp" />
+
+        <EditText
+            android:id="@+id/edittitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/full_circle_bg"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/data1layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="105dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlelayout">
+
+        <TextView
+            android:id="@+id/data1title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="开始日期"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <EditText
+            android:id="@+id/data1edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="示例：20220202"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="155dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data1layout">
+
+        <TextView
+            android:id="@+id/data2title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="结束日期"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <EditText
+            android:id="@+id/data2edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="示例：20220202"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="410dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="230dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="1dp">
+
+        <TextView
+            android:id="@+id/contenttitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="内容"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <TextView
+            android:id="@+id/null1"
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <TextView
+            android:id="@+id/null2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="210dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:layout_marginTop="255dp"
+        android:background="@drawable/full_circle_bg">
+
+        <EditText
+            android:id="@+id/editcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="413dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="420dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:layout_editor_absoluteX="1dp">
+
+        <TextView
+            android:id="@+id/fujiantitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="附件"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <TextView
+            android:id="@+id/null3"
+            android:layout_width="118dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <TextView
+            android:id="@+id/null4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="210dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="390dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <ImageButton
+            android:id="@+id/image1"
+            android:layout_width="63dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/add"/>
+
+        <ImageButton
+            android:id="@+id/image2"
+            android:layout_width="63dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="520dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:id="@+id/cate"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="类别" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup1"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/ca1"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:text="工作" />
+
+            <RadioButton
+                android:id="@+id/ca2"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:text="生活" />
+
+            <RadioButton
+                android:id="@+id/ca3"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:text="个人" />
+
+            <RadioButton
+                android:id="@+id/ca4"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:text="旅游" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="595dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/factfinish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="完成情况" />
+        <RadioGroup
+            android:id="@+id/radiogroup2"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/finish"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:text="完成" />
+            <RadioButton
+                android:id="@+id/unfinish"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:text="未完成" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="555dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/zhongyao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="重要程度" />
+        <RadioGroup
+            android:id="@+id/radiogroup3"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/feichangzhongyao"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:text="非常重要" />
+            <RadioButton
+                android:id="@+id/yibanzhongyao"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:text="一般重要" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_marginTop="650dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/purple_500"
+            android:text="删除计划"
+            android:textColor="@color/black"
+            android:layout_marginLeft="60dp"/>
+        <TextView
+            android:id="@+id/nulltext"
+            android:layout_width="50dp"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/change_plan"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="50dp"
+            android:background="@color/purple_500"
+            android:text="修改"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</RelativeLayout>

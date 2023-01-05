@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">planmanagement</string>
+    <string name="Mainactivity_label">Mainactivity</string>
+    <string name="second_fragment_label">second_activity</string>
+    <string name="button">Button</string>
+    <string name="hello_world">Hello World!!!!!!!!!!!!</string>
+</resources>

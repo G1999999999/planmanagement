@@ -1,0 +1,10 @@
+<vector android:autoMirrored="true" android:height="340dp"
+    android:viewportHeight="340" android:viewportWidth="454"
+    android:width="454dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#a1a69d" android:name="形状 2" android:pathData="m94.7 110.3 3.5 -3.5 23 23 -3.5 3.5 -23 -23z"/>
+    <path android:fillColor="#a1a69d" android:name="形状 3" android:pathData="m87.5 91c5.2 0 9.5 4 9.5 9c0 5 -4.3 9 -9.5 9c-5.2 0 -9.5 -4 -9.5 -9c0 -5 4.3 -9 9.5 -9z"/>
+    <path android:fillColor="#fff" android:name="形状 4" android:pathData="m89 89c7.2 0 13 5.6 13 12.5c0 6.9 -5.8 12.5 -13 12.5c-7.2 0 -13 -5.6 -13 -12.5c0 -6.9 5.8 -12.5 13 -12.5z"/>
+    <path android:fillColor="#fff" android:name="形状 5" android:pathData="m50 84h387c5.5 0 10 4.5 10 10v30c0 5.5 -4.5 10 -10 10h-387c-5.5 0 -10 -4.5 -10 -10v-30c0 -5.5 4.5 -10 10 -10z"/>
+    <path android:fillColor="#dfdcdc" android:name="形状 6" android:pathData="m116.5 92c6.4 0 11.5 4.5 11.5 10c0 5.5 -5.1 10 -11.5 10c-6.4 0 -11.5 -4.5 -11.5 -10c0 -5.5 5.1 -10 11.5 -10z"/>
+    <path android:fillColor="#dfdcdc" android:name="形状 7" android:pathData="m120.5 111.9 4.1 -2.9 14 20 -4.1 2.9 -14 -20z"/>
+</vector>
